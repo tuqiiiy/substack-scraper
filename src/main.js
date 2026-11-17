@@ -10,6 +10,7 @@ const {
     maxPublicationsPerCategory = 25,
     publicationUrls = [],
     scrapeLatestPosts = true,
+    maxPostsPerPublication = 5,
     proxyConfiguration,
 } = input;
 
@@ -157,7 +158,7 @@ async function processPublication(rawPub, categoryName = '') {
     let latestPosts = [];
     if (scrapeLatestPosts && baseUrl) {
         try {
-            latestPosts = await fetchLatestPosts(baseUrl, 5);
+            latestPosts = await fetchLatestPosts(baseUrl, maxPostsPerPublication || 5);
         } catch (e) {
             log.debug(`Error fetching posts for ${baseUrl}: ${e.message}`);
         }

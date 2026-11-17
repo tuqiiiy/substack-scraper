@@ -41,8 +41,16 @@
     "scrapeLatestPosts": {
       "title": "Scrape Latest Articles",
       "type": "boolean",
-      "description": "Extract the latest 3-5 posts with titles, dates, like counts, and comment metrics for each newsletter.",
+      "description": "Extract latest articles with titles, publication dates, like counts, and comment metrics for each newsletter.",
       "default": true
+    },
+    "maxPostsPerPublication": {
+      "title": "Max Articles per Newsletter",
+      "type": "integer",
+      "description": "Number of recent articles to extract per newsletter (between 1 and 20).",
+      "minimum": 1,
+      "maximum": 20,
+      "default": 5
     },
     "proxyConfiguration": {
       "title": "Proxy Configuration",

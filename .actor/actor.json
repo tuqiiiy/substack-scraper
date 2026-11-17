@@ -1,56 +1,77 @@
-{
-  "actorSpecification": 1,
-  "name": "substack-scraper",
-  "title": "Substack Newsletter & Author Scraper",
-  "description": "Scrape Substack newsletters, leaderboards, categories, subscriber metrics, pricing plans, author bios, Twitter handles, and latest articles. Export to CSV, JSON, or Excel.",
-  "version": "1.0",
-  "meta": {
-    "templateId": "project_empty"
-  },
-  "dockerfile": "./Dockerfile",
-  "categories": [
-    "LEAD_GENERATION",
-    "MARKETING",
-    "SOCIAL_MEDIA"
-  ],
-  "storages": {
-    "dataset": {
-      "actorSpecification": 1,
-      "title": "Substack Newsletters Dataset",
-      "views": {
-        "overview": {
-          "title": "Overview",
-          "transformation": {
-            "fields": [
-              "name",
-              "subdomain",
-              "url",
-              "authorName",
-              "twitterHandle",
-              "category",
-              "subscribers",
-              "monthlyPrice",
-              "annualPrice",
-              "description"
-            ]
-          },
-          "display": {
-            "component": "table",
-            "columns": {
-              "name": { "label": "Publication Name" },
-              "subdomain": { "label": "Subdomain" },
-              "url": { "label": "URL" },
-              "authorName": { "label": "Author" },
-              "twitterHandle": { "label": "Twitter" },
-              "category": { "label": "Category" },
-              "subscribers": { "label": "Subscribers" },
-              "monthlyPrice": { "label": "Monthly Price" },
-              "annualPrice": { "label": "Annual Price" },
-              "description": { "label": "Description" }
-            }
-          }
-        }
-      }
-    }
-  }
+﻿{
+    "actorSpecification":  1,
+    "name":  "substack-scraper",
+    "title":  "Substack Newsletter \u0026 Author Scraper",
+    "description":  "Scrape Substack newsletters, leaderboards, categories, subscriber metrics, pricing plans, author bios, Twitter handles, and latest articles. Export to CSV, JSON, or Excel.",
+    "version":  "1.0",
+    "meta":  {
+                 "templateId":  "project_empty"
+             },
+    "dockerfile":  "./Dockerfile",
+    "categories":  [
+                       "LEAD_GENERATION",
+                       "MARKETING",
+                       "SOCIAL_MEDIA"
+                   ],
+    "storages":  {
+                     "dataset":  {
+                                     "actorSpecification":  1,
+                                     "title":  "Substack Newsletters Dataset",
+                                     "views":  {
+                                                   "overview":  {
+                                                                    "title":  "Overview",
+                                                                    "transformation":  {
+                                                                                           "fields":  [
+                                                                                                          "name",
+                                                                                                          "subdomain",
+                                                                                                          "url",
+                                                                                                          "authorName",
+                                                                                                          "twitterHandle",
+                                                                                                          "category",
+                                                                                                          "subscribers",
+                                                                                                          "monthlyPrice",
+                                                                                                          "annualPrice",
+                                                                                                          "description"
+                                                                                                      ]
+                                                                                       },
+                                                                    "display":  {
+                                                                                    "component":  "table",
+                                                                                    "columns":  {
+                                                                                                    "name":  {
+                                                                                                                 "label":  "Publication Name"
+                                                                                                             },
+                                                                                                    "subdomain":  {
+                                                                                                                      "label":  "Subdomain"
+                                                                                                                  },
+                                                                                                    "url":  {
+                                                                                                                "label":  "URL"
+                                                                                                            },
+                                                                                                    "authorName":  {
+                                                                                                                       "label":  "Author"
+                                                                                                                   },
+                                                                                                    "twitterHandle":  {
+                                                                                                                          "label":  "Twitter"
+                                                                                                                      },
+                                                                                                    "category":  {
+                                                                                                                     "label":  "Category"
+                                                                                                                 },
+                                                                                                    "subscribers":  {
+                                                                                                                        "label":  "Subscribers"
+                                                                                                                    },
+                                                                                                    "monthlyPrice":  {
+                                                                                                                         "label":  "Monthly Price"
+                                                                                                                     },
+                                                                                                    "annualPrice":  {
+                                                                                                                        "label":  "Annual Price"
+                                                                                                                    },
+                                                                                                    "description":  {
+                                                                                                                        "label":  "Description"
+                                                                                                                    }
+                                                                                                }
+                                                                                }
+                                                                }
+                                               }
+                                 }
+                 },
+    "output":  "./output_schema.json"
 }

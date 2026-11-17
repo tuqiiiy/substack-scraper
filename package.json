@@ -1,0 +1,17 @@
+{
+  "name": "substack-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Comprehensive Substack Newsletter & Author Scraper. Extract top newsletters, categories, pricing plans, subscriber tiers, author details, Twitter handles, and latest articles.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "Antigravity",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}

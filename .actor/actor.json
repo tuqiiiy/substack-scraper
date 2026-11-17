@@ -3,7 +3,7 @@
   "name": "substack-scraper",
   "title": "Substack Newsletter & Author Scraper",
   "description": "Scrape Substack newsletters, leaderboards, categories, subscriber metrics, pricing plans, author bios, Twitter handles, and latest articles. Export to CSV, JSON, or Excel.",
-  "version": "1.0.0",
+  "version": "1.0",
   "meta": {
     "templateId": "project_empty"
   },
